@@ -1,5 +1,4 @@
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 /**
  * W21COMP1008S2 Test 1 - Build a Pet class
@@ -79,6 +78,30 @@ public class Pet {
             throw new IllegalArgumentException("Age must be an integer between 0 and 60");
     }
 
+    /**
+     * Validate if colour entered is one of the list of valid colours and set instance variable
+     * @param colour
+     */
+    public void setColour(String colour) {
+
+//        List<String> colours = Arrays.asList("yellow", "brown", "brown", "black", "blue", "red", "white", "grey");
+//
+//        for (String colourNew : colours)
+//        {
+//            if ( colourNew.equals(colour.toLowerCase()))
+//                this.colour = colour.toLowerCase();
+//            else
+//                throw new IllegalArgumentException("Valid type must be one of " + colours);
+//        }
+
+        this.colour = colour.toLowerCase();
+    }
+
+//    public String speak() {
+//
+//
+//        return sound;
+    }
 
 
 }
